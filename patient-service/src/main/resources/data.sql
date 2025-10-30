@@ -12,55 +12,55 @@ CREATE TABLE IF NOT EXISTS patient
 -- Insert well-known UUIDs for specific patients
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174000',
-       'John Doe',
-       'john.doe@example.com',
-       '123 Main St, Springfield',
-       '1985-06-15',
-       '2024-01-10'
+       'Tony Stark',
+       'tony.stark@starkindustries.com',
+       '10880 Malibu Point, Malibu, CA',
+       '1970-05-29',
+       '2008-05-02'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
                   WHERE id = '123e4567-e89b-12d3-a456-426614174000');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174001',
-       'Jane Smith',
-       'jane.smith@example.com',
-       '456 Elm St, Shelbyville',
-       '1990-09-23',
-       '2023-12-01'
+       'Bruce Wayne',
+       'bruce.wayne@wayneenterprises.com',
+       '1007 Mountain Drive, Gotham City',
+       '1972-02-19',
+       '2005-06-15'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
                   WHERE id = '123e4567-e89b-12d3-a456-426614174001');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174002',
-       'Alice Johnson',
-       'alice.johnson@example.com',
-       '789 Oak St, Capital City',
-       '1978-03-12',
-       '2022-06-20'
+       'Clark Kent',
+       'clark.kent@dailyplanet.com',
+       '344 Clinton Street, Metropolis',
+       '1938-06-18',
+       '1978-12-15'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
                   WHERE id = '123e4567-e89b-12d3-a456-426614174002');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174003',
-       'Bob Brown',
-       'bob.brown@example.com',
-       '321 Pine St, Springfield',
-       '1982-11-30',
-       '2023-05-14'
+       'Diana Prince',
+       'diana.prince@themyscira.gov',
+       'Themyscira Island, Greece',
+       '3000-03-22',
+       '2017-06-02'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
                   WHERE id = '123e4567-e89b-12d3-a456-426614174003');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174004',
-       'Emily Davis',
-       'emily.davis@example.com',
-       '654 Maple St, Shelbyville',
-       '1995-02-05',
-       '2024-03-01'
+       'Peter Parker',
+       'peter.parker@dailybugle.net',
+       '20 Ingram Street, Forest Hills, NY',
+       '2001-08-10',
+       '2017-07-07'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
                   WHERE id = '123e4567-e89b-12d3-a456-426614174004');
@@ -68,90 +68,90 @@ SELECT '123e4567-e89b-12d3-a456-426614174004',
 -- Insert well-known UUIDs for specific patients
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174005',
-       'Michael Green',
-       'michael.green@example.com',
-       '987 Cedar St, Springfield',
-       '1988-07-25',
-       '2024-02-15'
+       'Natasha Romanoff',
+       'natasha.romanoff@shield.gov',
+       'Unknown, Russia',
+       '1984-11-22',
+       '2010-05-07'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174005');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174006',
-       'Sarah Taylor',
-       'sarah.taylor@example.com',
-       '123 Birch St, Shelbyville',
-       '1992-04-18',
-       '2023-08-25'
+       'Steve Rogers',
+       'steve.rogers@avengers.org',
+       '569 Leaman Place, Brooklyn, NY',
+       '1918-07-04',
+       '2011-07-22'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174006');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174007',
-       'David Wilson',
-       'david.wilson@example.com',
-       '456 Ash St, Capital City',
-       '1975-01-11',
-       '2022-10-10'
+       'Harry Potter',
+       'harry.potter@hogwarts.edu',
+       '4 Privet Drive, Little Whinging, Surrey',
+       '1980-07-31',
+       '2001-11-16'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174007');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174008',
-       'Laura White',
-       'laura.white@example.com',
-       '789 Palm St, Springfield',
-       '1989-09-02',
-       '2024-04-20'
+       'Hermione Granger',
+       'hermione.granger@hogwarts.edu',
+       'Hampstead Garden Suburb, London',
+       '1979-09-19',
+       '2001-11-16'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174008');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174009',
-       'James Harris',
-       'james.harris@example.com',
-       '321 Cherry St, Shelbyville',
-       '1993-11-15',
-       '2023-06-30'
+       'Frodo Baggins',
+       'frodo.baggins@shire.me',
+       'Bag End, Hobbiton, The Shire',
+       '2968-09-22',
+       '2001-12-19'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174009');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174010',
-       'Emma Moore',
-       'emma.moore@example.com',
-       '654 Spruce St, Capital City',
-       '1980-08-09',
-       '2023-01-22'
+       'Luke Skywalker',
+       'luke.skywalker@rebellion.org',
+       'Tatooine, Outer Rim Territories',
+       '19-05-24',
+       '1977-05-25'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174010');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174011',
-       'Ethan Martinez',
-       'ethan.martinez@example.com',
-       '987 Redwood St, Springfield',
-       '1984-05-03',
-       '2024-05-12'
+       'Leia Organa',
+       'leia.organa@alderaan.gov',
+       'Alderaan Royal Palace, Alderaan',
+       '19-05-24',
+       '1977-05-25'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174011');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174012',
-       'Sophia Clark',
-       'sophia.clark@example.com',
-       '123 Hickory St, Shelbyville',
-       '1991-12-25',
-       '2022-11-11'
+       'Walter White',
+       'walter.white@jpwinterschool.edu',
+       '308 Negra Arroyo Lane, Albuquerque, NM',
+       '1959-09-07',
+       '2008-1-20'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174012');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174013',
-       'Daniel Lewis',
-       'daniel.lewis@example.com',
-       '456 Cypress St, Capital City',
-       '1976-06-08',
-       '2023-09-19'
+       'Sherlock Holmes',
+       'sherlock.holmes@bakerstreet.co.uk',
+       '221B Baker Street, London',
+       '1854-1-06',
+       '2010-07-25'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174013');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '223e4567-e89b-12d3-a456-426614174014',
-       'Isabella Walker',
-       'isabella.walker@example.com',
-       '789 Willow St, Springfield',
-       '1987-10-17',
-       '2024-03-29'
+       'James Bond',
+       'james.bond@mi6.uk',
+       'Universal Exports HQ, London',
+       '1968-04-13',
+       '2006-11-17'
     WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174014');
