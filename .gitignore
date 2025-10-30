@@ -1,2 +1,0 @@
-# Ignore local application properties with sensitive info
-src/main/resources/application.properties
