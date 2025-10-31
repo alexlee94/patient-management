@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "name": "Freddy Krueger",
-  "email": "updated_freddy.krueger@elmstreetnightmares.com",
+  "email": "freddy.krueger@elmstreetnightmares.com",
   "address": "1428 Elm Street, Springwood, Ohio",
   "dateOfBirth": "1942-09-13"
 }
